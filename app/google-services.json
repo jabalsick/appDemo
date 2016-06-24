@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "744292463794",
+    "firebase_url": "https://mongo-6f568.firebaseio.com",
+    "project_id": "mongo-6f568",
+    "storage_bucket": "mongo-6f568.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744292463794:android:3fdf15e7533d9ff2",
+        "android_client_info": {
+          "package_name": "example.firebase.mongo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744292463794-uoak7cd4bv8eko0o4p87h9lol5nijhak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbWrnFbZgn3R4ghXrtj_DqrHYGcppERAs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
