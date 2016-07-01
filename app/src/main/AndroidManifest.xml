@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListadoActivity"></activity>
+        <activity android:name=".AgosYJeroActivity"></activity>
     </application>
 
 </manifest>
