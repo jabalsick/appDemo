@@ -12,15 +12,36 @@ public class PostContent {
     private String title;
     private String detail;
     private String imageUrl;
+    private String author;
+    private int rating;
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
 
 
     public PostContent() {
     }
 
-    public PostContent(String title, String detail, String image) {
+    public PostContent(String title, String detail, String image, String author, int rating) {
         this.title = title;
         this.detail = detail;
         this.imageUrl = image;
+        this.author = author;
+        this.rating = rating;
     }
 
     public String getTitle() {
@@ -53,6 +74,8 @@ public class PostContent {
          postValues.put("title", title);
          postValues.put("detail", detail);
          postValues.put("imageUrl", imageUrl);
+         postValues.put("author", author);
+         postValues.put("rating", rating);
 
         return postValues;
     }
