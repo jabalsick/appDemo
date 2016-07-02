@@ -60,14 +60,6 @@ public class PostContent {
         this.detail = detail;
     }
 
-    public String getImage() {
-        return imageUrl;
-    }
-
-    public void setImage(String image) {
-        this.imageUrl = image;
-    }
-
     @Exclude
     public Map<String, Object> toMap(){
         HashMap<String, Object> postValues = new HashMap<>();
@@ -78,5 +70,13 @@ public class PostContent {
          postValues.put("rating", rating);
 
         return postValues;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     DatabaseReference mDatabase;
     DatabaseReference mPostsReference;
     private Button btnJeroAgos;
+    private Button btnIrAListado;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference();
         mPostsReference = mDatabase.child("posts");
         FloatingActionButton btn = (FloatingActionButton) findViewById(R.id.button);
+
+        btnIrAListado = (Button) findViewById(R.id.listado_posts);
+        btnIrAListado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(v.getContext(), ListadoActivity.class);
+                startActivity(i);
+            }
+        });
         btnJeroAgos = (Button) findViewById(R.id.botonJeroyAgos);
 
         btn.setOnClickListener(new View.OnClickListener() {
